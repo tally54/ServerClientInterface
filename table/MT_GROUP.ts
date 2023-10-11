@@ -7,6 +7,6 @@ export interface MT_GROUP {
         id: string,
         password: string
     },
-    createAt: Date,
-    updateAt: Date
+    createAt: number,
+    updateAt: number
 }

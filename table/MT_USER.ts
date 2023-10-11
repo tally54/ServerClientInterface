@@ -5,6 +5,6 @@ export interface MT_USER {
     name: string,
     password: string,
     plan: number,
-    createAt: Date,
-    updateAt: Date
+    createAt: number,
+    updateAt: number
 }
