@@ -5,9 +5,10 @@ export enum ErrorCode {
     USER_LOGIN_FAILED_USER_NONE,
     USER_LOGIN_FAILED,
     GROUP_ADD_FAILED,
+    EXCEPTION_FAILED,
 }
 
 export interface Error {
     code: ErrorCode,
-    data: any
+    error: any
 }
