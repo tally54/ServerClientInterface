@@ -12,3 +12,12 @@ export interface Error {
     code: ErrorCode,
     error: any
 }
+
+export interface ServerResponseJson {
+    result: boolean,
+    data: any,
+    error: {
+        code: ErrorCode
+        data: any
+    }
+}
