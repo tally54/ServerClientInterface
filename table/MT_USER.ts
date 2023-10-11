@@ -4,5 +4,7 @@ export interface MT_USER {
     mail: string,
     name: string,
     password: string,
-    plan: number
+    plan: number,
+    createAt: Date,
+    updateAt: Date
 }

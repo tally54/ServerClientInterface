@@ -6,5 +6,7 @@ export interface MT_GROUP {
     invi: {
         id: string,
         password: string
-    }
+    },
+    createAt: Date,
+    updateAt: Date
 }
