@@ -3,7 +3,6 @@ export enum MEMBER_STATUS {
     APPROVE,
     REJECT,
     CANCEL,
-
 }
 
 export interface MT_MEMBER {

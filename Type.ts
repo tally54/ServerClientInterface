@@ -24,6 +24,10 @@ export interface ServerResponseJson {
     }
 }
 
+export interface AddGestOutPut {
+    gestId: string
+}
+
 export interface GroupMember {
     userId: string
 }
