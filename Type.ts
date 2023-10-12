@@ -1,3 +1,5 @@
+import { MEMBER_STATUS } from "./table/MT_MEMBER"
+
 export enum ErrorCode {
     NONE = 0,
     USER_ADD_FAILED_USER_EXIST,
@@ -23,12 +25,12 @@ export interface ServerResponseJson {
 }
 
 export interface GroupMember {
-    id: string
+    userId: string
 }
 
 export interface getGroupOutPut {
     country: number,
-    id: string,
+    groupId: string,
     name: string,
     userId: string,
     invi: {
@@ -38,4 +40,12 @@ export interface getGroupOutPut {
     createAt: number,
     updateAt: number,
     member: GroupMember[]
+}
+
+export interface getMemberOutPut {
+    gestId: string,
+    name: string,
+    status: MEMBER_STATUS,
+    createAt: number,
+    updateAt: number,
 }

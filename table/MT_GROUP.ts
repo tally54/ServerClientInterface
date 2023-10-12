@@ -1,6 +1,6 @@
 export interface MT_GROUP {
     country: number,
-    id: string,
+    groupId: string,
     name: string,
     userId: string,
     invi: {

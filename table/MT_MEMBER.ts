@@ -1,13 +1,16 @@
-interface member {
-    id: string
+export enum MEMBER_STATUS {
+    APPLY = 0,
+    APPROVE,
+    REJECT,
+    CANCEL,
+
 }
 
 export interface MT_MEMBER {
     country: number
-    id: string
+    gestId: string
     groupId: string
-    userId: string,
-    status: number,
+    status: MEMBER_STATUS,
     createAt: number
     updateAt: number
 }

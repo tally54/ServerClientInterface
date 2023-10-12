@@ -1,10 +1,8 @@
 export interface MT_USER {
     country: number,
-    userId: string,
-    mail: string,
+    gestId: string,
     name: string,
-    password: string,
-    plan: number,
+    mail: string,
     createAt: number,
     updateAt: number
 }
