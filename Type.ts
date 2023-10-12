@@ -21,3 +21,21 @@ export interface ServerResponseJson {
         data: any
     }
 }
+
+export interface GroupMember {
+    id: string
+}
+
+export interface getGroupOutPut {
+    country: number,
+    id: string,
+    name: string,
+    userId: string,
+    invi: {
+        id: string,
+        password: string,
+    },
+    createAt: number,
+    updateAt: number,
+    member: GroupMember[]
+}
