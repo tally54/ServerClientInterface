@@ -1,15 +1,10 @@
-export enum MEMBER_STATUS {
-    APPLY = 0,
-    APPROVE,
-    REJECT,
-    CANCEL,
-}
+import { MemberStatus } from "../Type"
 
 export interface MT_MEMBER {
     country: number
     gestId: string
     groupId: string
-    status: MEMBER_STATUS,
+    status: MemberStatus,
     createAt: number
     updateAt: number
 }

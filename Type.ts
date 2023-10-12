@@ -1,5 +1,3 @@
-import { MEMBER_STATUS } from "./table/MT_MEMBER"
-
 export enum ErrorCode {
     NONE = 0,
     USER_ADD_FAILED_USER_EXIST,
@@ -8,6 +6,13 @@ export enum ErrorCode {
     USER_LOGIN_FAILED,
     GROUP_ADD_FAILED,
     EXCEPTION_FAILED,
+}
+
+export enum MemberStatus {
+    APPLY = 0,
+    APPROVE,
+    REJECT,
+    CANCEL,
 }
 
 export interface Error {
@@ -30,7 +35,7 @@ export interface AddGestOutPut {
 
 export interface GroupMember {
     gestId: string,
-    status: MEMBER_STATUS
+    status: MemberStatus
 }
 
 export interface getGroupOutPut {
@@ -51,7 +56,7 @@ export interface getMemberOutPut {
     gestId: string,
     name: string,
     mail: string,
-    status: MEMBER_STATUS,
+    status: MemberStatus,
     createAt: number,
     updateAt: number,
 }
