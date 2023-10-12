@@ -29,7 +29,8 @@ export interface AddGestOutPut {
 }
 
 export interface GroupMember {
-    userId: string
+    gestId: string,
+    status: MEMBER_STATUS
 }
 
 export interface getGroupOutPut {
