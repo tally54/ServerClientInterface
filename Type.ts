@@ -49,6 +49,7 @@ export interface getGroupOutPut {
 export interface getMemberOutPut {
     gestId: string,
     name: string,
+    mail: string,
     status: MEMBER_STATUS,
     createAt: number,
     updateAt: number,
