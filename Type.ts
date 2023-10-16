@@ -58,6 +58,7 @@ export interface getGroupGestOutPut {
     name: string,
     createAt: number,
     updateAt: number,
+    status: MemberStatus
 }
 
 export interface getMemberOutPut {
