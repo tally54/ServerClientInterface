@@ -52,6 +52,14 @@ export interface getGroupOutPut {
     member: GroupMember[]
 }
 
+export interface getGroupGestOutPut {
+    country: number,
+    groupId: string,
+    name: string,
+    createAt: number,
+    updateAt: number,
+}
+
 export interface getMemberOutPut {
     gestId: string,
     name: string,
