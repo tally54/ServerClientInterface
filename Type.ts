@@ -38,7 +38,7 @@ export interface GroupMember {
     status: MemberStatus
 }
 
-export interface getGroupOutPut {
+export interface getGroupHostOutPut {
     country: number,
     groupId: string,
     name: string,
