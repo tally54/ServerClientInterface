@@ -38,6 +38,14 @@ export interface GroupMember {
     status: MemberStatus
 }
 
+export interface getGroupOutPut {
+    country: number,
+    groupId: string,
+    name: string,
+    createAt: number,
+    updateAt: number
+}
+
 export interface getGroupHostOutPut {
     country: number,
     groupId: string,
@@ -62,10 +70,19 @@ export interface getGroupGestOutPut {
 }
 
 export interface getMemberOutPut {
+    memberId: string,
     gestId: string,
     name: string,
     mail: string,
     status: MemberStatus,
+    createAt: number,
+    updateAt: number,
+}
+
+export interface saearchInviGroupResult {
+    country: number,
+    groupId: string,
+    name: string,
     createAt: number,
     updateAt: number,
 }
