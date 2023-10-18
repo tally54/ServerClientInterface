@@ -1,4 +1,4 @@
-export interface MT_NOTIFICATION_GROUP {
+export interface MT_NOTIFICATION_DETAIL {
     country: number,
     uniqueId: string,
     notifyId: string,
