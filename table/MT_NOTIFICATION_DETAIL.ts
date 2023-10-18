@@ -1,6 +1,8 @@
-export interface MT_NOTIFICATION_GEST {
+export interface MT_NOTIFICATION_GROUP {
     country: number,
+    uniqueId: string,
     notifyId: string,
+    groupId: string,
     gestId: string,
     choiceId: number,
     status: number,
