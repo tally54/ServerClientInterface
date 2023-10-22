@@ -97,13 +97,15 @@ export interface getNotifysOutput {
     }[]
 }
 
+export interface NotifyUserInfo {
+    gestId: string;
+    name: string;
+    choiceId: number;
+    status: number;
+}
+
 export interface getNotifyUsersOutput {
     groupId: string;
     name: string;
-    gests: {
-        gestId: string;
-        name: string;
-        choiceId: number;
-        status: number;
-    }[]
+    gests: NotifyUserInfo[]
 }
