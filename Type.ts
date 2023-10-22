@@ -86,3 +86,13 @@ export interface saearchInviGroupResult {
     createAt: number,
     updateAt: number,
 }
+
+export interface getNotifysOutput {
+    notifyId: string;
+    name: string;
+    gests: {
+        gestId: string;
+        choiceId: number;
+        status: number;
+    }[]
+}

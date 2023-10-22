@@ -6,6 +6,7 @@ interface choice {
 export interface MT_NOTIFICATION {
     country: number,
     notifyId: string,
+    userId: string,
     name: string,
     choices: choice[],
     createAt: number,
