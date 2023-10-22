@@ -1,4 +1,4 @@
-interface choice {
+export interface CHOICE {
     id: number,
     text: string
 }
@@ -8,7 +8,7 @@ export interface MT_NOTIFICATION {
     notifyId: string,
     userId: string,
     name: string,
-    choices: choice[],
+    choices: CHOICE[],
     createAt: number,
     updateAt: number,
 }
